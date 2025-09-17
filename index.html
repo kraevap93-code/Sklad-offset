@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Склад офсет</title>
+    <title>РЎРєР»Р°Рґ РѕС„СЃРµС‚</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -93,26 +94,26 @@
     <!-- Auth Screen -->
     <div id="auth-screen" class="min-h-screen flex items-center justify-center p-4">
         <div class="card p-6 sm:p-8 rounded-2xl w-full max-w-md">
-            <h2 id="auth-title" class="text-2xl sm:text-3xl font-bold text-center mb-6 header-title">Вход в систему</h2>
+            <h2 id="auth-title" class="text-2xl sm:text-3xl font-bold text-center mb-6 header-title">Р’С…РѕРґ РІ СЃРёСЃС‚РµРјСѓ</h2>
             <form id="auth-form">
                 <div class="mb-4">
                     <label for="email" class="block text-sm font-medium form-label mb-1">Email</label>
                     <input type="email" id="email" required class="form-input w-full px-4 py-2 border rounded-lg transition">
                 </div>
                 <div class="mb-4">
-                    <label for="password" class="block text-sm font-medium form-label mb-1">Пароль</label>
+                    <label for="password" class="block text-sm font-medium form-label mb-1">РџР°СЂРѕР»СЊ</label>
                     <input type="password" id="password" required class="form-input w-full px-4 py-2 border rounded-lg transition">
                 </div>
                 <div id="confirm-password-container" class="mb-6 hidden">
-                     <label for="confirm-password" class="block text-sm font-medium form-label mb-1">Подтвердите пароль</label>
+                     <label for="confirm-password" class="block text-sm font-medium form-label mb-1">РџРѕРґС‚РІРµСЂРґРёС‚Рµ РїР°СЂРѕР»СЊ</label>
                      <input type="password" id="confirm-password" class="form-input w-full px-4 py-2 border rounded-lg transition">
                 </div>
-                <button id="auth-button" type="submit" class="btn-primary w-full font-semibold py-2.5 px-4 rounded-lg transition duration-300">Войти</button>
+                <button id="auth-button" type="submit" class="btn-primary w-full font-semibold py-2.5 px-4 rounded-lg transition duration-300">Р’РѕР№С‚Рё</button>
             </form>
             <p id="auth-message" class="text-center mt-4 text-sm"></p>
             <p class="text-center mt-4 text-sm form-label">
-                <span id="auth-toggle-prompt">Нет аккаунта?</span>
-                <a href="#" id="toggle-auth-mode" class="font-semibold text-yellow-500 hover:underline">Зарегистрироваться</a>
+                <span id="auth-toggle-prompt">РќРµС‚ Р°РєРєР°СѓРЅС‚Р°?</span>
+                <a href="#" id="toggle-auth-mode" class="font-semibold text-yellow-500 hover:underline">Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ</a>
             </p>
         </div>
     </div>
@@ -123,19 +124,19 @@
          <div id="app" class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-5xl">
             <header class="mb-8">
                 <div class="flex flex-col gap-4">
-                    <h1 class="text-3xl sm:text-4xl font-bold header-title text-center">Склад офсет</h1>
+                    <h1 class="text-3xl sm:text-4xl font-bold header-title text-center">РЎРєР»Р°Рґ РѕС„СЃРµС‚</h1>
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
                         <!-- User Info -->
                         <div class="text-center sm:text-left order-2 sm:order-1">
-                            <p class="text-sm text-secondary">Вы вошли как:</p>
+                            <p class="text-sm text-secondary">Р’С‹ РІРѕС€Р»Рё РєР°Рє:</p>
                             <p id="user-email" class="font-semibold header-title break-all"></p>
-                            <button id="logout-btn" class="text-sm text-red-500 hover:underline">Выйти</button>
+                            <button id="logout-btn" class="text-sm text-red-500 hover:underline">Р’С‹Р№С‚Рё</button>
                         </div>
                         <!-- Controls -->
                         <div class="flex items-center justify-center sm:justify-end gap-2 sm:gap-4 order-1 sm:order-2">
-                            <button id="manage-categories-btn" class="text-sm bg-blue-500 text-white hover:bg-blue-600 font-semibold px-3 py-2 rounded-md transition">Управление категориями</button>
-                            <button id="global-history-btn" class="text-sm bg-yellow-400 text-zinc-800 hover:bg-yellow-500 font-semibold px-3 py-2 rounded-md transition">Общая история</button>
-                            <label for="theme-toggle-input" title="Переключить тему" class="relative w-14 h-8 flex-shrink-0 flex items-center bg-sky-200 dark:bg-zinc-700 rounded-full cursor-pointer p-1 transition-colors duration-300">
+                            <button id="manage-categories-btn" class="text-sm bg-blue-500 text-white hover:bg-blue-600 font-semibold px-3 py-2 rounded-md transition">РЈРїСЂР°РІР»РµРЅРёРµ РєР°С‚РµРіРѕСЂРёСЏРјРё</button>
+                            <button id="global-history-btn" class="text-sm bg-yellow-400 text-zinc-800 hover:bg-yellow-500 font-semibold px-3 py-2 rounded-md transition">РћР±С‰Р°СЏ РёСЃС‚РѕСЂРёСЏ</button>
+                            <label for="theme-toggle-input" title="РџРµСЂРµРєР»СЋС‡РёС‚СЊ С‚РµРјСѓ" class="relative w-14 h-8 flex-shrink-0 flex items-center bg-sky-200 dark:bg-zinc-700 rounded-full cursor-pointer p-1 transition-colors duration-300">
                                 <input type="checkbox" id="theme-toggle-input" class="sr-only peer">
                                 <span class="w-6 h-6 bg-yellow-400 dark:bg-slate-300 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center peer-checked:translate-x-6">
                                     <svg class="h-4 w-4 text-white block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.66-15.66l-.707.707M4.04 19.96l-.707.707M21 12h-1M4 12H3m16.96-7.96l-.707-.707M4.04 4.04l-.707-.707M12 12a2 2 0 100-4 2 2 0 000 4z" /></svg>
@@ -148,73 +149,73 @@
             </header>
 
             <div id="add-material-card" class="card p-6 rounded-2xl mb-8">
-                <h2 class="text-xl sm:text-2xl font-semibold mb-4 header-title">Добавить материал</h2>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-4 header-title">Р”РѕР±Р°РІРёС‚СЊ РјР°С‚РµСЂРёР°Р»</h2>
                 <form id="add-material-form" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-end">
                     <div>
-                        <label for="material-category" class="block text-sm font-medium form-label mb-1">Категория</label>
+                        <label for="material-category" class="block text-sm font-medium form-label mb-1">РљР°С‚РµРіРѕСЂРёСЏ</label>
                         <select id="material-category" required class="form-select w-full px-4 py-2 border rounded-lg transition"></select>
                     </div>
                     <div>
-                        <label for="material-name" class="block text-sm font-medium form-label mb-1">Название</label>
-                        <input type="text" id="material-name" list="material-names-list" placeholder="Введите название" required class="form-input w-full px-4 py-2 border rounded-lg transition">
+                        <label for="material-name" class="block text-sm font-medium form-label mb-1">РќР°Р·РІР°РЅРёРµ</label>
+                        <input type="text" id="material-name" list="material-names-list" placeholder="Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ" required class="form-input w-full px-4 py-2 border rounded-lg transition">
                         <datalist id="material-names-list"></datalist>
                     </div>
                     <div>
-                        <label for="material-nomenclature" class="block text-sm font-medium form-label mb-1">Номенклатура поставщика</label>
-                        <input type="text" id="material-nomenclature" placeholder="Введите номенклатуру" class="form-input w-full px-4 py-2 border rounded-lg transition">
+                        <label for="material-nomenclature" class="block text-sm font-medium form-label mb-1">РќРѕРјРµРЅРєР»Р°С‚СѓСЂР° РїРѕСЃС‚Р°РІС‰РёРєР°</label>
+                        <input type="text" id="material-nomenclature" placeholder="Р’РІРµРґРёС‚Рµ РЅРѕРјРµРЅРєР»Р°С‚СѓСЂСѓ" class="form-input w-full px-4 py-2 border rounded-lg transition">
                     </div>
                     <div id="material-format-container">
-                        <label for="material-format" class="block text-sm font-medium form-label mb-1">Формат в мм.</label>
-                        <input type="text" id="material-format" placeholder="Напр. 700x1000" class="form-input w-full px-4 py-2 border rounded-lg transition">
+                        <label for="material-format" class="block text-sm font-medium form-label mb-1">Р¤РѕСЂРјР°С‚ РІ РјРј.</label>
+                        <input type="text" id="material-format" placeholder="РќР°РїСЂ. 700x1000" class="form-input w-full px-4 py-2 border rounded-lg transition">
                     </div>
                     <div>
-                        <label for="material-quantity" class="block text-sm font-medium form-label mb-1">Количество</label>
+                        <label for="material-quantity" class="block text-sm font-medium form-label mb-1">РљРѕР»РёС‡РµСЃС‚РІРѕ</label>
                         <input type="number" id="material-quantity" placeholder="1000" step="any" required class="form-input w-full px-4 py-2 border rounded-lg transition">
                     </div>
                     <div>
-                        <label for="material-unit" class="block text-sm font-medium form-label mb-1">Ед. изм.</label>
+                        <label for="material-unit" class="block text-sm font-medium form-label mb-1">Р•Рґ. РёР·Рј.</label>
                         <select id="material-unit" required class="form-select w-full px-4 py-2 border rounded-lg transition">
-                            <option value="лист">лист</option>
-                            <option value="кг">кг</option>
-                            <option value="л">л</option>
-                            <option value="шт.">шт.</option>
+                            <option value="Р»РёСЃС‚">Р»РёСЃС‚</option>
+                            <option value="РєРі">РєРі</option>
+                            <option value="Р»">Р»</option>
+                            <option value="С€С‚.">С€С‚.</option>
                         </select>
                     </div>
                     <button type="submit" class="btn-primary sm:col-span-2 lg:col-span-3 w-full font-semibold py-2.5 px-4 rounded-lg transition duration-300 mt-2">
-                        Добавить
+                        Р”РѕР±Р°РІРёС‚СЊ
                     </button>
                 </form>
             </div>
             <div>
-                <h2 class="text-xl sm:text-2xl font-semibold mb-4 header-title">Складские остатки</h2>
+                <h2 class="text-xl sm:text-2xl font-semibold mb-4 header-title">РЎРєР»Р°РґСЃРєРёРµ РѕСЃС‚Р°С‚РєРё</h2>
                 <div class="mb-4">
-                    <label for="name-search-input" class="block text-sm font-medium form-label mb-1">Поиск по названию или номенклатуре</label>
-                    <input type="text" id="name-search-input" placeholder="Введите название или номенклатуру..." class="form-input w-full px-4 py-2 border rounded-lg transition">
+                    <label for="name-search-input" class="block text-sm font-medium form-label mb-1">РџРѕРёСЃРє РїРѕ РЅР°Р·РІР°РЅРёСЋ РёР»Рё РЅРѕРјРµРЅРєР»Р°С‚СѓСЂРµ</label>
+                    <input type="text" id="name-search-input" placeholder="Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РёР»Рё РЅРѕРјРµРЅРєР»Р°С‚СѓСЂСѓ..." class="form-input w-full px-4 py-2 border rounded-lg transition">
                 </div>
                 <div id="category-filters" class="flex flex-wrap gap-2 mb-6"></div>
                 <div id="format-search-container" class="mb-6">
-                    <label for="format-search-input" class="block text-sm font-medium form-label mb-1">Поиск по формату</label>
+                    <label for="format-search-input" class="block text-sm font-medium form-label mb-1">РџРѕРёСЃРє РїРѕ С„РѕСЂРјР°С‚Сѓ</label>
                     <div class="flex gap-2">
-                        <input type="text" id="format-search-input" placeholder="Например, 700x1000" class="form-input flex-grow md:flex-grow-0 md:w-1/3 px-4 py-2 border rounded-lg transition">
-                        <button id="format-search-reset" class="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-zinc-600 dark:text-zinc-200 dark:hover:bg-zinc-500 rounded-lg hover:bg-gray-300 transition">Сброс</button>
+                        <input type="text" id="format-search-input" placeholder="РќР°РїСЂРёРјРµСЂ, 700x1000" class="form-input flex-grow md:flex-grow-0 md:w-1/3 px-4 py-2 border rounded-lg transition">
+                        <button id="format-search-reset" class="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-zinc-600 dark:text-zinc-200 dark:hover:bg-zinc-500 rounded-lg hover:bg-gray-300 transition">РЎР±СЂРѕСЃ</button>
                     </div>
                 </div>
                 <div id="error-container" class="hidden my-4 p-4 border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-700 dark:text-red-300 rounded-lg">
                     <p id="error-message" class="text-center"></p>
                 </div>
-                <p id="loading-message" class="text-center text-secondary py-4">Загрузка данных...</p>
+                <p id="loading-message" class="text-center text-secondary py-4">Р—Р°РіСЂСѓР·РєР° РґР°РЅРЅС‹С…...</p>
                 <div id="materials-list" class="space-y-6"></div>
             </div>
         </div>
     </div>
 
     <!-- Modals -->
-    <div id="update-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-sm m-4 relative"><h3 class="text-xl font-semibold mb-4 header-title" id="modal-title">Обновить количество</h3><form id="update-quantity-form"><input type="hidden" id="modal-material-id"><input type="hidden" id="modal-action-type"><div><label for="quantity-change" class="block text-sm font-medium form-label mb-1">Значение</label><input type="number" id="quantity-change" min="0" step="any" placeholder="Введите число" required class="form-input w-full px-4 py-2 border rounded-lg transition"></div><div class="mt-4"><label for="quantity-comment" class="block text-sm font-medium form-label mb-1">Комментарий (необязательно)</label><textarea id="quantity-comment" placeholder="Например, номер заказа или причина" rows="3" class="form-input w-full px-4 py-2 border rounded-lg transition"></textarea></div><div class="mt-6 flex flex-wrap justify-end gap-2"><button type="button" id="cancel-update" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Отмена</button><button type="button" id="write-off-all-btn" class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition hidden">Списать все</button><button type="submit" class="btn-primary px-4 py-2 rounded-lg transition">Подтвердить</button></div></form></div></div>
-    <div id="delete-confirm-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-sm m-4 relative"><h3 class="text-xl font-semibold mb-2 header-title">Подтверждение</h3><p class="text-secondary mb-6">Вы уверены, что хотите удалить этот материал?</p><div class="flex justify-end space-x-3"><button type="button" id="cancel-delete" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Отмена</button><button type="button" id="confirm-delete" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">Удалить</button></div></div></div>
-    <div id="history-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-lg m-4 relative flex flex-col" style="max-height: 90vh;"><div class="flex justify-between items-center mb-4 pb-4 border-b border-border-color"><h3 class="text-lg sm:text-xl font-semibold header-title" id="history-modal-title">История операций</h3><button id="close-history-modal" class="text-2xl text-secondary hover:text-primary">&times;</button></div><div id="history-log-container" class="overflow-y-auto space-y-2"></div></div></div>
-    <div id="global-history-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-3xl m-4 relative flex flex-col" style="max-height: 90vh;"><div class="flex justify-between items-center mb-4 pb-4 border-b border-border-color"><h3 class="text-lg sm:text-xl font-semibold header-title">Общая история всех операций</h3><button id="close-global-history-modal" class="text-2xl text-secondary hover:text-primary">&times;</button></div><div id="global-history-log-container" class="overflow-y-auto space-y-2"></div></div></div>
-    <div id="manage-categories-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-md m-4 relative"><h3 class="text-xl font-semibold mb-4 header-title">Управление категориями</h3><h4 class="text-lg font-semibold mb-2 header-title">Добавить новую категорию</h4><form id="add-category-form" class="flex gap-2"><input type="text" id="new-category-name" placeholder="Название новой категории" required class="form-input flex-grow px-4 py-2 border rounded-lg transition"><button type="submit" class="btn-primary px-4 py-2 rounded-lg">Добавить</button></form><p id="category-message" class="text-sm text-center mt-3"></p><hr class="my-6 border-border-color"><h4 class="text-lg font-semibold mb-2 header-title">Существующие категории</h4><div id="existing-categories-list" class="space-y-2 max-h-60 overflow-y-auto"></div><div class="mt-6 flex justify-end"><button type="button" id="close-categories-modal" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Закрыть</button></div></div></div>
-    <div id="move-material-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-md m-4 relative"><h3 class="text-xl font-semibold mb-2 header-title">Переместить материал</h3><p id="move-material-name" class="text-secondary mb-4"></p><form id="move-material-form"><label for="move-category-select" class="block text-sm font-medium form-label mb-1">Новая категория</label><select id="move-category-select" required class="form-select w-full px-4 py-2 border rounded-lg transition mb-4"></select><div class="flex justify-end space-x-3"><button type="button" id="cancel-move" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Отмена</button><button type="submit" class="btn-primary px-4 py-2 rounded-lg">Переместить</button></div></form></div></div>
+    <div id="update-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-sm m-4 relative"><h3 class="text-xl font-semibold mb-4 header-title" id="modal-title">РћР±РЅРѕРІРёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ</h3><form id="update-quantity-form"><input type="hidden" id="modal-material-id"><input type="hidden" id="modal-action-type"><div><label for="quantity-change" class="block text-sm font-medium form-label mb-1">Р—РЅР°С‡РµРЅРёРµ</label><input type="number" id="quantity-change" min="0" step="any" placeholder="Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ" required class="form-input w-full px-4 py-2 border rounded-lg transition"></div><div class="mt-4"><label for="quantity-comment" class="block text-sm font-medium form-label mb-1">РљРѕРјРјРµРЅС‚Р°СЂРёР№ (РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ)</label><textarea id="quantity-comment" placeholder="РќР°РїСЂРёРјРµСЂ, РЅРѕРјРµСЂ Р·Р°РєР°Р·Р° РёР»Рё РїСЂРёС‡РёРЅР°" rows="3" class="form-input w-full px-4 py-2 border rounded-lg transition"></textarea></div><div class="mt-6 flex flex-wrap justify-end gap-2"><button type="button" id="cancel-update" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">РћС‚РјРµРЅР°</button><button type="button" id="write-off-all-btn" class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition hidden">РЎРїРёСЃР°С‚СЊ РІСЃРµ</button><button type="submit" class="btn-primary px-4 py-2 rounded-lg transition">РџРѕРґС‚РІРµСЂРґРёС‚СЊ</button></div></form></div></div>
+    <div id="delete-confirm-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-sm m-4 relative"><h3 class="text-xl font-semibold mb-2 header-title">РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ</h3><p class="text-secondary mb-6">Р’С‹ СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ СЌС‚РѕС‚ РјР°С‚РµСЂРёР°Р»?</p><div class="flex justify-end space-x-3"><button type="button" id="cancel-delete" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">РћС‚РјРµРЅР°</button><button type="button" id="confirm-delete" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">РЈРґР°Р»РёС‚СЊ</button></div></div></div>
+    <div id="history-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-lg m-4 relative flex flex-col" style="max-height: 90vh;"><div class="flex justify-between items-center mb-4 pb-4 border-b border-border-color"><h3 class="text-lg sm:text-xl font-semibold header-title" id="history-modal-title">РСЃС‚РѕСЂРёСЏ РѕРїРµСЂР°С†РёР№</h3><button id="close-history-modal" class="text-2xl text-secondary hover:text-primary">&times;</button></div><div id="history-log-container" class="overflow-y-auto space-y-2"></div></div></div>
+    <div id="global-history-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-3xl m-4 relative flex flex-col" style="max-height: 90vh;"><div class="flex justify-between items-center mb-4 pb-4 border-b border-border-color"><h3 class="text-lg sm:text-xl font-semibold header-title">РћР±С‰Р°СЏ РёСЃС‚РѕСЂРёСЏ РІСЃРµС… РѕРїРµСЂР°С†РёР№</h3><button id="close-global-history-modal" class="text-2xl text-secondary hover:text-primary">&times;</button></div><div id="global-history-log-container" class="overflow-y-auto space-y-2"></div></div></div>
+    <div id="manage-categories-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-md m-4 relative"><h3 class="text-xl font-semibold mb-4 header-title">РЈРїСЂР°РІР»РµРЅРёРµ РєР°С‚РµРіРѕСЂРёСЏРјРё</h3><h4 class="text-lg font-semibold mb-2 header-title">Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІСѓСЋ РєР°С‚РµРіРѕСЂРёСЋ</h4><form id="add-category-form" class="flex gap-2"><input type="text" id="new-category-name" placeholder="РќР°Р·РІР°РЅРёРµ РЅРѕРІРѕР№ РєР°С‚РµРіРѕСЂРёРё" required class="form-input flex-grow px-4 py-2 border rounded-lg transition"><button type="submit" class="btn-primary px-4 py-2 rounded-lg">Р”РѕР±Р°РІРёС‚СЊ</button></form><p id="category-message" class="text-sm text-center mt-3"></p><hr class="my-6 border-border-color"><h4 class="text-lg font-semibold mb-2 header-title">РЎСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ РєР°С‚РµРіРѕСЂРёРё</h4><div id="existing-categories-list" class="space-y-2 max-h-60 overflow-y-auto"></div><div class="mt-6 flex justify-end"><button type="button" id="close-categories-modal" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Р—Р°РєСЂС‹С‚СЊ</button></div></div></div>
+    <div id="move-material-modal" class="fixed inset-0 z-50 items-center justify-center hidden p-4"><div class="modal-backdrop fixed inset-0"></div><div class="card p-6 rounded-2xl w-full max-w-md m-4 relative"><h3 class="text-xl font-semibold mb-2 header-title">РџРµСЂРµРјРµСЃС‚РёС‚СЊ РјР°С‚РµСЂРёР°Р»</h3><p id="move-material-name" class="text-secondary mb-4"></p><form id="move-material-form"><label for="move-category-select" class="block text-sm font-medium form-label mb-1">РќРѕРІР°СЏ РєР°С‚РµРіРѕСЂРёСЏ</label><select id="move-category-select" required class="form-select w-full px-4 py-2 border rounded-lg transition mb-4"></select><div class="flex justify-end space-x-3"><button type="button" id="cancel-move" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">РћС‚РјРµРЅР°</button><button type="submit" class="btn-primary px-4 py-2 rounded-lg">РџРµСЂРµРјРµСЃС‚РёС‚СЊ</button></div></form></div></div>
 
     <script type="module">
         // --- Firebase Initialization ---
@@ -248,7 +249,7 @@
                 auth = getAuth(app);
             } catch(e) {
                 console.error("Firebase initialization failed:", e);
-                document.body.innerHTML = '<h1>Ошибка инициализации Firebase.</h1>';
+                document.body.innerHTML = '<h1>РћС€РёР±РєР° РёРЅРёС†РёР°Р»РёР·Р°С†РёРё Firebase.</h1>';
                 return;
             }
 
@@ -286,9 +287,9 @@
             const loadingMessage = document.getElementById('loading-message');
             if(loadingMessage) loadingMessage.style.display = 'none';
             if (error.code === 'permission-denied') {
-                errorMessage.innerHTML = `<strong>Ошибка доступа:</strong> Убедитесь, что ваши правила Firestore настроены правильно.`;
+                errorMessage.innerHTML = `<strong>РћС€РёР±РєР° РґРѕСЃС‚СѓРїР°:</strong> РЈР±РµРґРёС‚РµСЃСЊ, С‡С‚Рѕ РІР°С€Рё РїСЂР°РІРёР»Р° Firestore РЅР°СЃС‚СЂРѕРµРЅС‹ РїСЂР°РІРёР»СЊРЅРѕ.`;
             } else {
-                errorMessage.textContent = `Произошла ошибка при "${context}". Проверьте консоль.`;
+                errorMessage.textContent = `РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РїСЂРё "${context}". РџСЂРѕРІРµСЂСЊС‚Рµ РєРѕРЅСЃРѕР»СЊ.`;
             }
             errorContainer.classList.remove('hidden');
         }
@@ -304,19 +305,19 @@
             authMessage.textContent = ''; 
 
             if (isLoginMode) {
-                authTitle.textContent = 'Вход в систему';
-                authButton.textContent = 'Войти';
+                authTitle.textContent = 'Р’С…РѕРґ РІ СЃРёСЃС‚РµРјСѓ';
+                authButton.textContent = 'Р’РѕР№С‚Рё';
                 confirmPasswordContainer.classList.add('hidden');
                 confirmPasswordInput.required = false;
-                authTogglePrompt.textContent = 'Нет аккаунта? ';
-                toggleAuthModeLink.textContent = 'Зарегистрироваться';
+                authTogglePrompt.textContent = 'РќРµС‚ Р°РєРєР°СѓРЅС‚Р°? ';
+                toggleAuthModeLink.textContent = 'Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ';
             } else {
-                authTitle.textContent = 'Регистрация';
-                authButton.textContent = 'Зарегистрироваться';
+                authTitle.textContent = 'Р РµРіРёСЃС‚СЂР°С†РёСЏ';
+                authButton.textContent = 'Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ';
                 confirmPasswordContainer.classList.remove('hidden');
                 confirmPasswordInput.required = true;
-                authTogglePrompt.textContent = 'Уже есть аккаунт? ';
-                toggleAuthModeLink.textContent = 'Войти';
+                authTogglePrompt.textContent = 'РЈР¶Рµ РµСЃС‚СЊ Р°РєРєР°СѓРЅС‚? ';
+                toggleAuthModeLink.textContent = 'Р’РѕР№С‚Рё';
             }
         }
         
@@ -343,18 +344,18 @@
                     } catch (error) {
                         console.error("Login Error:", error);
                         authMessage.classList.add('text-red-500');
-                        authMessage.textContent = 'Неверный email или пароль.';
+                        authMessage.textContent = 'РќРµРІРµСЂРЅС‹Р№ email РёР»Рё РїР°СЂРѕР»СЊ.';
                     }
                 } else { // Registration Mode
                     const confirmPassword = document.getElementById('confirm-password').value;
                     if (password !== confirmPassword) {
-                        authMessage.textContent = 'Пароли не совпадают.';
+                        authMessage.textContent = 'РџР°СЂРѕР»Рё РЅРµ СЃРѕРІРїР°РґР°СЋС‚.';
                         authMessage.classList.add('text-red-500');
                         return;
                     }
                     try {
                         await createUserWithEmailAndPassword(auth, email, password);
-                        authMessage.textContent = 'Регистрация успешна! Теперь можно войти.';
+                        authMessage.textContent = 'Р РµРіРёСЃС‚СЂР°С†РёСЏ СѓСЃРїРµС€РЅР°! РўРµРїРµСЂСЊ РјРѕР¶РЅРѕ РІРѕР№С‚Рё.';
                         authMessage.classList.add('text-green-500');
                         isLoginMode = true;
                         updateAuthView();
@@ -362,11 +363,11 @@
                         console.error("Registration Error:", error);
                         authMessage.classList.add('text-red-500');
                         if (error.code === 'auth/email-already-in-use') {
-                            authMessage.textContent = 'Этот email уже зарегистрирован.';
+                            authMessage.textContent = 'Р­С‚РѕС‚ email СѓР¶Рµ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ.';
                         } else if (error.code === 'auth/weak-password') {
-                            authMessage.textContent = 'Пароль слишком слабый (минимум 6 символов).';
+                            authMessage.textContent = 'РџР°СЂРѕР»СЊ СЃР»РёС€РєРѕРј СЃР»Р°Р±С‹Р№ (РјРёРЅРёРјСѓРј 6 СЃРёРјРІРѕР»РѕРІ).';
                         } else {
-                            authMessage.textContent = 'Произошла ошибка регистрации.';
+                            authMessage.textContent = 'РџСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° СЂРµРіРёСЃС‚СЂР°С†РёРё.';
                         }
                     }
                 }
@@ -446,7 +447,7 @@
             document.getElementById('write-off-all-btn').addEventListener('click', () => {
                 const id = document.getElementById('modal-material-id').value;
                 const material = allMaterials.find(m => m.id === id);
-                const comment = document.getElementById('quantity-comment').value.trim() || 'Списание всех остатков';
+                const comment = document.getElementById('quantity-comment').value.trim() || 'РЎРїРёСЃР°РЅРёРµ РІСЃРµС… РѕСЃС‚Р°С‚РєРѕРІ';
                 if (material) {
                     updateMaterialQuantity(id, -material.quantity, comment);
                     closeUpdateModal();
@@ -512,7 +513,7 @@
                 });
                 renderMaterials();
             }, (error) => {
-                handleFirebaseError(error, 'получении материалов');
+                handleFirebaseError(error, 'РїРѕР»СѓС‡РµРЅРёРё РјР°С‚РµСЂРёР°Р»РѕРІ');
             });
         }
         function listenForCategories() {
@@ -525,7 +526,7 @@
                   });
                   updateCategoryUI();
              }, (error) => {
-                handleFirebaseError(error, 'получении категорий');
+                handleFirebaseError(error, 'РїРѕР»СѓС‡РµРЅРёРё РєР°С‚РµРіРѕСЂРёР№');
             });
         }
         async function addMaterial(name, quantity, unit, category, format, nomenclature) {
@@ -534,7 +535,7 @@
                 const querySnapshot = await getDocs(q);
                 if (!querySnapshot.empty) {
                     const existingDoc = querySnapshot.docs[0];
-                    await updateMaterialQuantity(existingDoc.id, Number(quantity), 'Приход');
+                    await updateMaterialQuantity(existingDoc.id, Number(quantity), 'РџСЂРёС…РѕРґ');
                 } else {
                     const newMaterialRef = doc(materialsCollectionRef);
                     const historyRef = collection(newMaterialRef, 'history');
@@ -547,14 +548,14 @@
                         type: 'add', 
                         timestamp: new Date(), 
                         user: currentUser.email, 
-                        comment: 'Первоначальное добавление',
+                        comment: 'РџРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅРѕРµ РґРѕР±Р°РІР»РµРЅРёРµ',
                         materialName: name,
                         materialFormat: format
                     });
                     await batch.commit();
                 }
             } catch (error) {
-                 handleFirebaseError(error, 'добавлении материала');
+                 handleFirebaseError(error, 'РґРѕР±Р°РІР»РµРЅРёРё РјР°С‚РµСЂРёР°Р»Р°');
             }
         }
         async function updateMaterialQuantity(id, quantityChange, comment = '') {
@@ -563,7 +564,7 @@
             try {
                 await runTransaction(db, async (transaction) => {
                     const materialDoc = await transaction.get(materialRef);
-                    if (!materialDoc.exists()) { throw "Документ не существует!"; }
+                    if (!materialDoc.exists()) { throw "Р”РѕРєСѓРјРµРЅС‚ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!"; }
                     
                     const materialData = materialDoc.data();
                     const newQuantity = materialData.quantity + quantityChange;
@@ -584,7 +585,7 @@
                     });
                 });
             } catch (error) {
-                handleFirebaseError(error, 'обновлении количества');
+                handleFirebaseError(error, 'РѕР±РЅРѕРІР»РµРЅРёРё РєРѕР»РёС‡РµСЃС‚РІР°');
             }
         }
         async function deleteMaterial(id) {
@@ -592,7 +593,7 @@
                 // Note: This doesn't delete the history subcollection. For this app's scope, it's acceptable.
                 await deleteDoc(doc(materialsCollectionRef, id));
             } catch (error) {
-                handleFirebaseError(error, 'удалении материала');
+                handleFirebaseError(error, 'СѓРґР°Р»РµРЅРёРё РјР°С‚РµСЂРёР°Р»Р°');
             }
         }
         async function handleAddCategory(e) {
@@ -603,18 +604,18 @@
             if (!newCategoryName) return;
 
             if (allCategories.map(c => c.name.toLowerCase()).includes(newCategoryName.toLowerCase())) {
-                messageEl.textContent = 'Такая категория уже существует.';
+                messageEl.textContent = 'РўР°РєР°СЏ РєР°С‚РµРіРѕСЂРёСЏ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚.';
                 messageEl.className = 'text-sm text-center mt-3 text-red-500';
                 return;
             }
             try {
                 await addDoc(categoriesCollectionRef, { name: newCategoryName });
-                messageEl.textContent = 'Категория добавлена!';
+                messageEl.textContent = 'РљР°С‚РµРіРѕСЂРёСЏ РґРѕР±Р°РІР»РµРЅР°!';
                 messageEl.className = 'text-sm text-center mt-3 text-green-500';
                 input.value = '';
                 setTimeout(() => { messageEl.textContent = ''; }, 2000);
             } catch(error) {
-                handleFirebaseError(error, 'добавлении категории');
+                handleFirebaseError(error, 'РґРѕР±Р°РІР»РµРЅРёРё РєР°С‚РµРіРѕСЂРёРё');
             }
         }
         async function handleDeleteCategory(categoryName) {
@@ -625,7 +626,7 @@
             const materialsSnap = await getDocs(q);
 
             if (!materialsSnap.empty) {
-                messageEl.textContent = 'Нельзя удалить категорию, в которой есть материалы. Сначала переместите или удалите их.';
+                messageEl.textContent = 'РќРµР»СЊР·СЏ СѓРґР°Р»РёС‚СЊ РєР°С‚РµРіРѕСЂРёСЋ, РІ РєРѕС‚РѕСЂРѕР№ РµСЃС‚СЊ РјР°С‚РµСЂРёР°Р»С‹. РЎРЅР°С‡Р°Р»Р° РїРµСЂРµРјРµСЃС‚РёС‚Рµ РёР»Рё СѓРґР°Р»РёС‚Рµ РёС….';
                 messageEl.className = 'text-sm text-center mt-3 text-red-500';
                 setTimeout(() => { messageEl.textContent = ''; }, 4000);
                 return;
@@ -639,11 +640,11 @@
                         currentFilter = 'All';
                         renderMaterials();
                     }
-                    messageEl.textContent = 'Категория удалена.';
+                    messageEl.textContent = 'РљР°С‚РµРіРѕСЂРёСЏ СѓРґР°Р»РµРЅР°.';
                     messageEl.className = 'text-sm text-center mt-3 text-green-500';
                     setTimeout(() => { messageEl.textContent = ''; }, 2000);
                 } catch(error) {
-                    handleFirebaseError(error, 'удалении категории');
+                    handleFirebaseError(error, 'СѓРґР°Р»РµРЅРёРё РєР°С‚РµРіРѕСЂРёРё');
                 }
             }
         }
@@ -656,7 +657,7 @@
                 await updateDoc(doc(materialsCollectionRef, materialId), { category: newCategory });
                 closeMoveMaterialModal();
             } catch (error) {
-                 handleFirebaseError(error, 'перемещении материала');
+                 handleFirebaseError(error, 'РїРµСЂРµРјРµС‰РµРЅРёРё РјР°С‚РµСЂРёР°Р»Р°');
             }
         }
 
@@ -678,7 +679,7 @@
         function updateCategoryUI() {
             const categoryNames = allCategories.map(c => c.name);
             const filtersContainer = document.getElementById('category-filters');
-            filtersContainer.innerHTML = `<button data-category="All" class="filter-btn">Все</button>`;
+            filtersContainer.innerHTML = `<button data-category="All" class="filter-btn">Р’СЃРµ</button>`;
             categoryNames.forEach(cat => {
                 const btn = document.createElement('button');
                 btn.className = 'filter-btn';
@@ -711,17 +712,17 @@
             listElement.innerHTML = '';
             
             if (allMaterials.length === 0) {
-                 loadingMessage.textContent = 'Материалов на складе нет. Добавьте первый!';
+                 loadingMessage.textContent = 'РњР°С‚РµСЂРёР°Р»РѕРІ РЅР° СЃРєР»Р°РґРµ РЅРµС‚. Р”РѕР±Р°РІСЊС‚Рµ РїРµСЂРІС‹Р№!';
                  loadingMessage.style.display = 'block';
             } else if (materialsToRender.length === 0) {
                  loadingMessage.style.display = 'block';
-                 loadingMessage.textContent = 'Материалы не найдены по вашему запросу.';
+                 loadingMessage.textContent = 'РњР°С‚РµСЂРёР°Р»С‹ РЅРµ РЅР°Р№РґРµРЅС‹ РїРѕ РІР°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ.';
             } else {
                  loadingMessage.style.display = 'none';
             }
 
             const groupedByCategory = materialsToRender.reduce((acc, material) => {
-                const category = material.category || 'Другое';
+                const category = material.category || 'Р”СЂСѓРіРѕРµ';
                 if (!acc[category]) acc[category] = [];
                 acc[category].push(material);
                 return acc;
@@ -741,7 +742,7 @@
                 sortedItems.forEach(material => {
                     const card = document.createElement('div');
                     card.className = 'card p-4 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4';
-                    card.innerHTML = ` <div class="flex-grow"> <div class="flex items-baseline gap-3 flex-wrap"> <h4 class="text-lg font-bold header-title">${material.name}</h4> ${material.format ? `<p class="text-base font-semibold text-yellow-500 bg-yellow-400/10 px-2 py-0.5 rounded-full">${material.format}</p>` : ''} </div> ${material.nomenclature ? `<p class="text-xs text-secondary mt-1">${material.nomenclature}</p>` : ''} <p class="text-sm text-secondary mt-2">Остаток:</p> <p class="text-2xl font-bold">${material.quantity} <span class="text-base font-normal">${material.unit}</span></p> </div> <div class="flex items-center gap-2 w-full sm:w-auto"> <button data-id="${material.id}" data-name="${material.name}" data-category="${material.category}" class="move-btn flex-1 sm:flex-none w-10 h-10 text-purple-700 hover:bg-purple-100 dark:hover:bg-purple-900/50 dark:text-purple-400 rounded-full flex items-center justify-center transition" title="Переместить в другую категорию"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg></button> <button data-id="${material.id}" data-action="add" class="update-btn flex-1 sm:flex-none w-10 h-10 text-green-700 hover:bg-green-100 dark:hover:bg-green-900/50 dark:text-green-400 rounded-full flex items-center justify-center text-2xl font-bold transition" title="Приход материала">+</button> <button data-id="${material.id}" data-action="subtract" class="update-btn flex-1 sm:flex-none w-10 h-10 text-yellow-700 hover:bg-yellow-100 dark:hover:bg-yellow-900/50 dark:text-yellow-400 rounded-full flex items-center justify-center text-2xl font-bold transition" title="Списание материала">-</button> <button data-id="${material.id}" data-name="${material.name}" class="history-btn flex-1 sm:flex-none w-10 h-10 text-blue-700 hover:bg-blue-100 dark:hover:bg-blue-900/50 dark:text-blue-400 rounded-full flex items-center justify-center transition" title="История операций"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></button> <button data-id="${material.id}" class="delete-btn flex-1 sm:flex-none w-10 h-10 text-red-700 hover:bg-red-100 dark:hover:bg-red-900/50 dark:text-red-400 rounded-full flex items-center justify-center transition" title="Удалить материал"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg></button> </div>`;
+                    card.innerHTML = ` <div class="flex-grow"> <div class="flex items-baseline gap-3 flex-wrap"> <h4 class="text-lg font-bold header-title">${material.name}</h4> ${material.format ? `<p class="text-base font-semibold text-yellow-500 bg-yellow-400/10 px-2 py-0.5 rounded-full">${material.format}</p>` : ''} </div> ${material.nomenclature ? `<p class="text-xs text-secondary mt-1">${material.nomenclature}</p>` : ''} <p class="text-sm text-secondary mt-2">РћСЃС‚Р°С‚РѕРє:</p> <p class="text-2xl font-bold">${material.quantity} <span class="text-base font-normal">${material.unit}</span></p> </div> <div class="flex items-center gap-2 w-full sm:w-auto"> <button data-id="${material.id}" data-name="${material.name}" data-category="${material.category}" class="move-btn flex-1 sm:flex-none w-10 h-10 text-purple-700 hover:bg-purple-100 dark:hover:bg-purple-900/50 dark:text-purple-400 rounded-full flex items-center justify-center transition" title="РџРµСЂРµРјРµСЃС‚РёС‚СЊ РІ РґСЂСѓРіСѓСЋ РєР°С‚РµРіРѕСЂРёСЋ"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg></button> <button data-id="${material.id}" data-action="add" class="update-btn flex-1 sm:flex-none w-10 h-10 text-green-700 hover:bg-green-100 dark:hover:bg-green-900/50 dark:text-green-400 rounded-full flex items-center justify-center text-2xl font-bold transition" title="РџСЂРёС…РѕРґ РјР°С‚РµСЂРёР°Р»Р°">+</button> <button data-id="${material.id}" data-action="subtract" class="update-btn flex-1 sm:flex-none w-10 h-10 text-yellow-700 hover:bg-yellow-100 dark:hover:bg-yellow-900/50 dark:text-yellow-400 rounded-full flex items-center justify-center text-2xl font-bold transition" title="РЎРїРёСЃР°РЅРёРµ РјР°С‚РµСЂРёР°Р»Р°">-</button> <button data-id="${material.id}" data-name="${material.name}" class="history-btn flex-1 sm:flex-none w-10 h-10 text-blue-700 hover:bg-blue-100 dark:hover:bg-blue-900/50 dark:text-blue-400 rounded-full flex items-center justify-center transition" title="РСЃС‚РѕСЂРёСЏ РѕРїРµСЂР°С†РёР№"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></button> <button data-id="${material.id}" class="delete-btn flex-1 sm:flex-none w-10 h-10 text-red-700 hover:bg-red-100 dark:hover:bg-red-900/50 dark:text-red-400 rounded-full flex items-center justify-center transition" title="РЈРґР°Р»РёС‚СЊ РјР°С‚РµСЂРёР°Р»"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg></button> </div>`;
                     itemsContainer.appendChild(card);
                 });
                 categoryContainer.appendChild(itemsContainer);
@@ -749,7 +750,7 @@
             });
         }
         
-        function openUpdateModal(id, action) { const modal = document.getElementById('update-modal'); const writeOffBtn = document.getElementById('write-off-all-btn'); document.getElementById('modal-material-id').value = id; document.getElementById('modal-action-type').value = action; document.getElementById('update-quantity-form').reset(); document.getElementById('modal-title').textContent = action === 'add' ? 'Приход материала' : 'Списание материала'; if (action === 'subtract') { writeOffBtn.classList.remove('hidden'); } else { writeOffBtn.classList.add('hidden'); } modal.style.display = 'flex'; }
+        function openUpdateModal(id, action) { const modal = document.getElementById('update-modal'); const writeOffBtn = document.getElementById('write-off-all-btn'); document.getElementById('modal-material-id').value = id; document.getElementById('modal-action-type').value = action; document.getElementById('update-quantity-form').reset(); document.getElementById('modal-title').textContent = action === 'add' ? 'РџСЂРёС…РѕРґ РјР°С‚РµСЂРёР°Р»Р°' : 'РЎРїРёСЃР°РЅРёРµ РјР°С‚РµСЂРёР°Р»Р°'; if (action === 'subtract') { writeOffBtn.classList.remove('hidden'); } else { writeOffBtn.classList.add('hidden'); } modal.style.display = 'flex'; }
         function closeUpdateModal() { document.getElementById('update-modal').style.display = 'none'; }
         function openDeleteConfirmModal(id) { const modal = document.getElementById('delete-confirm-modal'); document.getElementById('confirm-delete').dataset.id = id; modal.style.display = 'flex'; }
         function closeDeleteConfirmModal() { document.getElementById('delete-confirm-modal').style.display = 'none'; }
@@ -757,8 +758,8 @@
             const modal = document.getElementById('history-modal');
             const title = document.getElementById('history-modal-title');
             const container = document.getElementById('history-log-container');
-            title.textContent = `История: ${name}`;
-            container.innerHTML = '<p class="text-secondary">Загрузка истории...</p>';
+            title.textContent = `РСЃС‚РѕСЂРёСЏ: ${name}`;
+            container.innerHTML = '<p class="text-secondary">Р—Р°РіСЂСѓР·РєР° РёСЃС‚РѕСЂРёРё...</p>';
             modal.style.display = 'flex';
             try {
                 const historyRef = collection(db, `materials/${id}/history`);
@@ -766,7 +767,7 @@
                 const snapshot = await getDocs(q);
                 container.innerHTML = '';
                 if (snapshot.empty) {
-                    container.innerHTML = '<p class="text-secondary">История операций пуста.</p>';
+                    container.innerHTML = '<p class="text-secondary">РСЃС‚РѕСЂРёСЏ РѕРїРµСЂР°С†РёР№ РїСѓСЃС‚Р°.</p>';
                     return;
                 }
                 snapshot.forEach(doc => {
@@ -778,14 +779,14 @@
                     const date = entry.timestamp.toDate().toLocaleString('ru-RU');
                     const changeText = isAdd ? `+${entry.change}` : `${entry.change}`;
                     const changeColor = isAdd ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400';
-                    const typeText = isAdd ? 'Приход' : 'Списание';
+                    const typeText = isAdd ? 'РџСЂРёС…РѕРґ' : 'РЎРїРёСЃР°РЅРёРµ';
                     const commentHtml = entry.comment ? `<p class="text-sm text-secondary mt-1 italic">"${entry.comment}"</p>` : '';
-                    const userHtml = entry.user ? `<p class="text-xs text-secondary mt-1">Пользователь: ${entry.user}</p>` : '';
-                    logItem.innerHTML = ` <div class="flex justify-between items-start"> <div> <p class="font-semibold header-title">${typeText}</p> <p class="text-sm text-secondary">${date}</p> ${commentHtml} ${userHtml} </div> <div class="text-right flex-shrink-0 ml-4"> <p class="font-bold text-lg ${changeColor}">${changeText}</p> <p class="text-sm text-secondary">Остаток: ${entry.newQuantity}</p> </div> </div> `;
+                    const userHtml = entry.user ? `<p class="text-xs text-secondary mt-1">РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: ${entry.user}</p>` : '';
+                    logItem.innerHTML = ` <div class="flex justify-between items-start"> <div> <p class="font-semibold header-title">${typeText}</p> <p class="text-sm text-secondary">${date}</p> ${commentHtml} ${userHtml} </div> <div class="text-right flex-shrink-0 ml-4"> <p class="font-bold text-lg ${changeColor}">${changeText}</p> <p class="text-sm text-secondary">РћСЃС‚Р°С‚РѕРє: ${entry.newQuantity}</p> </div> </div> `;
                     container.appendChild(logItem);
                 });
             } catch (error) {
-                handleFirebaseError(error, 'загрузке истории');
+                handleFirebaseError(error, 'Р·Р°РіСЂСѓР·РєРµ РёСЃС‚РѕСЂРёРё');
             }
         }
         function closeHistoryModal() { document.getElementById('history-modal').style.display = 'none'; }
@@ -793,7 +794,7 @@
         async function openGlobalHistoryModal() {
             const modal = document.getElementById('global-history-modal');
             const container = document.getElementById('global-history-log-container');
-            container.innerHTML = '<p class="text-secondary">Загрузка общей истории...</p>';
+            container.innerHTML = '<p class="text-secondary">Р—Р°РіСЂСѓР·РєР° РѕР±С‰РµР№ РёСЃС‚РѕСЂРёРё...</p>';
             modal.style.display = 'flex';
 
             try {
@@ -802,7 +803,7 @@
                 
                 container.innerHTML = '';
                 if (snapshot.empty) {
-                    container.innerHTML = '<p class="text-secondary">История операций пуста.</p>';
+                    container.innerHTML = '<p class="text-secondary">РСЃС‚РѕСЂРёСЏ РѕРїРµСЂР°С†РёР№ РїСѓСЃС‚Р°.</p>';
                     return;
                 }
 
@@ -817,10 +818,10 @@
                      const date = entry.timestamp.toDate().toLocaleString('ru-RU');
                      const changeText = isAdd ? `+${entry.change}` : `${entry.change}`;
                      const changeColor = isAdd ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400';
-                     const typeText = isAdd ? 'Приход' : 'Списание';
+                     const typeText = isAdd ? 'РџСЂРёС…РѕРґ' : 'РЎРїРёСЃР°РЅРёРµ';
                      const commentHtml = entry.comment ? `<p class="text-sm text-secondary mt-1 italic">"${entry.comment}"</p>` : '';
-                     const userDisplay = entry.user || 'Неизвестно';
-                     const userHtml = `<p class="text-xs text-secondary mt-1">Пользователь: ${userDisplay}</p>`;
+                     const userDisplay = entry.user || 'РќРµРёР·РІРµСЃС‚РЅРѕ';
+                     const userHtml = `<p class="text-xs text-secondary mt-1">РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ: ${userDisplay}</p>`;
 
                      logItem.innerHTML = `
                          <div class="flex justify-between items-start flex-wrap">
@@ -833,14 +834,14 @@
                              </div>
                              <div class="text-right flex-shrink-0 ml-4 mt-2 sm:mt-0">
                                 <p class="font-bold text-lg ${changeColor}">${changeText}</p>
-                                <p class="text-sm text-secondary">Остаток: ${entry.newQuantity}</p>
+                                <p class="text-sm text-secondary">РћСЃС‚Р°С‚РѕРє: ${entry.newQuantity}</p>
                              </div>
                          </div>
                      `;
                      container.appendChild(logItem);
                 });
             } catch (error) {
-                 handleFirebaseError(error, 'загрузке общей истории');
+                 handleFirebaseError(error, 'Р·Р°РіСЂСѓР·РєРµ РѕР±С‰РµР№ РёСЃС‚РѕСЂРёРё');
             }
         }
         function closeGlobalHistoryModal() { document.getElementById('global-history-modal').style.display = 'none'; }
@@ -850,14 +851,14 @@
             listContainer.innerHTML = '';
 
             if (allCategories.length === 0) {
-                listContainer.innerHTML = '<p class="text-secondary text-sm">Категорий пока нет.</p>';
+                listContainer.innerHTML = '<p class="text-secondary text-sm">РљР°С‚РµРіРѕСЂРёР№ РїРѕРєР° РЅРµС‚.</p>';
             } else {
                 allCategories.forEach(category => {
                     const categoryItem = document.createElement('div');
                     categoryItem.className = 'flex justify-between items-center p-2 rounded-lg bg-bg-secondary dark:bg-zinc-800';
                     categoryItem.innerHTML = `
                         <span class="text-primary">${category.name}</span>
-                        <button data-category-name="${category.name}" class="delete-category-btn text-red-500 hover:text-red-700" title="Удалить категорию">
+                        <button data-category-name="${category.name}" class="delete-category-btn text-red-500 hover:text-red-700" title="РЈРґР°Р»РёС‚СЊ РєР°С‚РµРіРѕСЂРёСЋ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
                         </button>
                     `;
@@ -884,6 +885,7 @@
     </script>
 </body>
 </html>
+
 
 
 
